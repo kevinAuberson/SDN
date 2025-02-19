@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5 Configuration</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Configure Reverse Proxy</h1>
+    <form action="/submit" method="POST">
+        <label for="vip">Virtual IP Address:</label>
+        <input type="text" id="vip" name="vip" required><br><br>
+
+        <label for="members">Backend Members (comma-separated):</label>
+        <input type="text" id="members" name="members" required><br><br>
+
+        <label for="cert">Certificate:</label>
+        <textarea id="cert" name="cert" rows="10" required></textarea><br><br>
+
+        <label for="key">Private Key:</label>
+        <textarea id="key" name="key" rows="10" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
